@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/contracts/treasury-desk/treasury_bond/1.0.0",
+  "title": "Treasury bond holding",
+  "description": "Contract v1.0.0 for one government bond holding (FR-TBD-001). Producer: finance office. Consumers: coupon schedules, master cash-flow. Owner: investment analyst.",
+  "type": "object",
+  "required": ["bond_id", "face_value_rwf", "coupon_rate", "value_date", "tenor_years", "maturity_date"],
+  "properties": {
+    "asset_class": {"const": "treasury_bond"},
+    "bond_id": {"type": "string", "pattern": "^FXD[0-9]/[0-9]{4}/[0-9]{1,2}YRS$", "description": "Auction reference, e.g. FXD2/2016/15YRS"},
+    "face_value_rwf": {"type": "number", "exclusiveMinimum": 0},
+    "coupon_rate": {"type": "number", "minimum": 0, "maximum": 0.3},
+    "value_date": {"type": "string", "format": "date"},
+    "tenor_years": {"type": "integer", "minimum": 1, "maximum": 30},
+    "maturity_date": {"type": "string", "format": "date"}
+  },
+  "additionalProperties": false,
+  "x-service-levels": {"freshness": "new subscriptions recorded within 1 working day of settlement", "completeness": "100% of required fields", "uniqueness": "one row per bond_id"},
+  "x-change-process": "Pull request reviewed by the finance manager"
+}

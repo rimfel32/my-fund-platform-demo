@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/contracts/treasury-desk/dividend/1.0.0",
+  "title": "Dividend declared by a portfolio company",
+  "description": "Contract v1.0.0 for one dividend row (FR-EQT-003). Producer: investment analyst (equity), from each company's declaration. Consumers: equity income, master cash-flow, dividend forecast (FR-EQT-005). Owner: investment analyst.",
+  "type": "object",
+  "required": ["dividend_id", "company_id", "fiscal_year", "declared_on", "pay_date", "dividend_total_rwf_m", "stake_pct", "fund_share_rwf_m"],
+  "properties": {
+    "dividend_id": {"type": "string", "pattern": "^DIV-PC[0-9]{3}-20[0-9]{2}$", "description": "DIV-<company>-<fiscal year>"},
+    "company_id": {"type": "string", "pattern": "^PC[0-9]{3}$"},
+    "fiscal_year": {"type": "integer", "minimum": 2000, "maximum": 2100},
+    "declared_on": {"type": "string", "format": "date"},
+    "pay_date": {"type": "string", "format": "date"},
+    "dividend_total_rwf_m": {"type": "number", "minimum": 0, "description": "Whole dividend declared by the company, RWF millions"},
+    "stake_pct": {"type": "number", "exclusiveMinimum": 0, "maximum": 100, "description": "The fund's stake: 25.5 means 25.5%"},
+    "fund_share_rwf_m": {"type": "number", "minimum": 0, "description": "The fund's share: total x stake / 100"},
+    "received_on": {"type": "string", "format": "date"},
+    "received_rwf_m": {"type": "number", "minimum": 0}
+  },
+  "additionalProperties": false,
+  "x-service-levels": {"freshness": "declarations recorded within 5 working days", "completeness": "100% of required fields", "uniqueness": "one row per dividend_id"},
+  "x-change-process": "Changes proposed as a pull request to the platform repository; reviewed by the finance manager; BACKWARD compatible changes only within v1"
+}

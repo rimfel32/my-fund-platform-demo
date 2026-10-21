@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/contracts/treasury-desk/subsidiary_loan/1.0.0",
+  "title": "Subsidiary loan tranche",
+  "description": "Contract v1.0.0 for one loan tranche (FR-SBL-001). Producer: finance office. Consumers: amortisation schedules, collections, arrears. Owner: investment analyst.",
+  "type": "object",
+  "required": ["loan_id", "borrower", "principal_rwf", "interest_rate", "frequency", "n_instalments", "first_payment_date"],
+  "properties": {
+    "asset_class": {"const": "subsidiary_loan"},
+    "loan_id": {"type": "string", "pattern": "^SUB-[A-Z]-T[0-9]+$"},
+    "borrower": {"type": "string", "minLength": 2},
+    "principal_rwf": {"type": "number", "exclusiveMinimum": 0},
+    "interest_rate": {"type": "number", "minimum": 0, "maximum": 0.3},
+    "frequency": {"enum": ["monthly", "semiannual"]},
+    "n_instalments": {"type": "integer", "minimum": 1, "maximum": 240},
+    "first_payment_date": {"type": "string", "format": "date"}
+  },
+  "additionalProperties": false,
+  "x-service-levels": {"freshness": "disbursements recorded within 1 working day", "completeness": "100% of required fields", "uniqueness": "one row per loan_id"},
+  "x-change-process": "Pull request reviewed by the finance manager"
+}

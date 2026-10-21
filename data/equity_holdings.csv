@@ -1,0 +1,41 @@
+asset_class,company_id,company_name,sector,country,is_listed,ticker,investment_date,stake_pct,cost_rwf_m
+equity,PC001,Portfolio Company 01,Agro-processing,RW,True,HDF00,2020-10-31,31.7,4567.8
+equity,PC002,Portfolio Company 02,Manufacturing,UG,True,HDF01,2019-04-26,23.8,3133.3
+equity,PC003,Portfolio Company 03,Tourism,UG,True,HDF02,2018-06-26,27.6,6526.1
+equity,PC004,Portfolio Company 04,Banking,RW,True,HDF03,2020-07-04,35.6,8402.4
+equity,PC005,Portfolio Company 05,Banking,RW,True,HDF04,2019-11-24,30.4,9117.0
+equity,PC006,Portfolio Company 06,Manufacturing,TZ,True,HDF05,2020-02-10,27.1,7770.4
+equity,PC007,Portfolio Company 07,Agro-processing,RW,True,HDF06,2018-04-17,27.4,4542.9
+equity,PC008,Portfolio Company 08,Tourism,TZ,True,HDF07,2018-12-10,17.2,3547.8
+equity,PC009,Portfolio Company 09,Energy,UG,True,HDF08,2020-04-24,6.2,1648.6
+equity,PC010,Portfolio Company 10,Agro-processing,UG,True,HDF09,2020-07-04,22.5,2977.3
+equity,PC011,Portfolio Company 11,Telecoms,UG,False,,2019-04-24,13.6,4509.2
+equity,PC012,Portfolio Company 12,Logistics,RW,False,,2020-06-04,21.3,5228.6
+equity,PC013,Portfolio Company 13,Tourism,RW,False,,2020-07-14,39.1,7580.7
+equity,PC014,Portfolio Company 14,Manufacturing,RW,False,,2019-03-03,14.4,4947.2
+equity,PC015,Portfolio Company 15,Tourism,RW,False,,2020-09-14,7.3,1791.1
+equity,PC016,Portfolio Company 16,Manufacturing,RW,False,,2018-11-14,16.3,1006.2
+equity,PC017,Portfolio Company 17,Telecoms,KE,False,,2018-09-21,16.7,2619.3
+equity,PC018,Portfolio Company 18,Energy,RW,False,,2020-01-21,31.5,5171.2
+equity,PC019,Portfolio Company 19,Manufacturing,UG,False,,2019-12-02,27.3,9801.6
+equity,PC020,Portfolio Company 20,Banking,UG,False,,2018-06-03,36.4,5518.5
+equity,PC021,Portfolio Company 21,Telecoms,TZ,False,,2020-07-05,31.6,6516.8
+equity,PC022,Portfolio Company 22,Real estate,UG,False,,2018-08-08,21.3,2800.5
+equity,PC023,Portfolio Company 23,Energy,RW,False,,2020-06-04,37.6,4673.9
+equity,PC024,Portfolio Company 24,Logistics,TZ,False,,2018-01-09,11.7,1039.5
+equity,PC025,Portfolio Company 25,Manufacturing,RW,False,,2020-05-26,5.9,523.5
+equity,PC026,Portfolio Company 26,Tourism,RW,False,,2020-05-15,8.6,1606.9
+equity,PC027,Portfolio Company 27,Banking,TZ,False,,2020-05-08,33.9,10509.8
+equity,PC028,Portfolio Company 28,Manufacturing,RW,False,,2020-01-02,23.5,6696.2
+equity,PC029,Portfolio Company 29,Telecoms,RW,False,,2019-06-03,11.5,1483.6
+equity,PC030,Portfolio Company 30,Banking,RW,False,,2020-02-15,25.0,7122.5
+equity,PC031,Portfolio Company 31,Banking,UG,False,,2018-11-01,11.1,778.4
+equity,PC032,Portfolio Company 32,Energy,RW,False,,2020-05-08,32.9,8999.6
+equity,PC033,Portfolio Company 33,Agro-processing,RW,False,,2019-09-04,22.8,3065.1
+equity,PC034,Portfolio Company 34,Telecoms,RW,False,,2019-05-20,20.2,800.2
+equity,PC035,Portfolio Company 35,Logistics,UG,False,,2019-07-11,17.1,4523.5
+equity,PC036,Portfolio Company 36,Agro-processing,RW,False,,2019-09-18,30.2,10433.8
+equity,PC037,Portfolio Company 37,Manufacturing,RW,False,,2018-02-10,19.5,3004.5
+equity,PC038,Portfolio Company 38,Manufacturing,RW,False,,2018-06-03,8.5,1341.2
+equity,PC039,Portfolio Company 39,Real estate,KE,False,,2018-09-28,9.7,574.0
+equity,PC040,Portfolio Company 40,Tourism,UG,False,,2018-05-06,43.5,14830.1

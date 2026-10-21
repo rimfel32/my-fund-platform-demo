@@ -1,0 +1,2 @@
+borrowing_id,lender,principal_rwf,interest_rate,issue_date,maturity_date
+BRW-01,Lender P (pension fund),20000000000,0.118,2021-11-26,2026-11-26

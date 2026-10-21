@@ -1,0 +1,5 @@
+asset_class,loan_id,borrower,principal_rwf,interest_rate,frequency,n_instalments,first_payment_date
+subsidiary_loan,SUB-A-T1,Subsidiary A,7500000000,0.11,monthly,60,2024-02-28
+subsidiary_loan,SUB-B-T1,Subsidiary B,3000000000,0.085,monthly,36,2025-01-31
+subsidiary_loan,SUB-C-T1,Subsidiary C,4000000000,0.09,semiannual,10,2023-06-30
+subsidiary_loan,SUB-C-T2,Subsidiary C,2000000000,0.075,semiannual,8,2024-12-31

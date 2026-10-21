@@ -1,0 +1,4 @@
+asset_class,bond_id,issuer,bond_type,face_value_rwf,coupon_rate,value_date,n_payments
+corporate_bond,CB-BULLET-01,Issuer K (bullet),bullet,8000000000,0.13,2023-02-15,8
+corporate_bond,CB-AMORT-01,Issuer L (amortising),amortising,10000000000,0.1375,2021-09-30,20
+corporate_bond,CB-AMORT-02,Issuer M (amortising),amortising,6000000000,0.1375,2022-04-28,14

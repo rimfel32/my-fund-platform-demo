@@ -1,0 +1,6 @@
+# Platform settings. Change them here, not in the code.
+as_of: "2026-10-21"        # "today" for alerts, freshness and arrears (fixed for the course; use today's date at work)
+year: 2026                 # the reporting year for income, the master plan and variance
+data_dir: "data"
+output_dir: "output"       # where results are written (created if missing)
+demo_mode: true
